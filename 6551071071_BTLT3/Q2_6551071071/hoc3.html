@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper {
+      border: 1px solid #000;
+      width: 600px;
+      padding: 10px;
+    }
+    .logo {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .nav {
+      text-align: center;
+      border-bottom: 1px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    .nav a {
+      margin: 0 10px;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .news {
+      width: 48%;
+    }
+    .announcements {
+      width: 48%;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    .announcements .post-section{
+        border-left:2px solid blue ;
+        padding-left: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo">Logo - University name</div>
+    <div class="nav">
+      <a href="#presentation">Presentation</a> |
+      <a href="#studies">Studies</a> |
+      <a href="#staff">Staff</a>
+    </div>
+    <div class="content">
+      <div class="news">
+        <p><b>News</b></p>
+        <p>News 1 - Date</p>
+        <p>Description</p>
+        <p>News 2 - Date</p>
+        <p>Description</p>
+      </div>
+      <div class="announcements">
+        <div class="post-section">
+            <p><b>announcements</b></p>
+            <p>Opencourse 1</p>
+            <p>Description</p>
+            <p>Open course 2</p>
+            <p>Description</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Contact: info@University.com</p>
+      <p>(c) University, 2011</p>
+    </div>
+  </div>
+</body>
+</html>

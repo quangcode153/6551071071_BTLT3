@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 600px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .radio-group {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>User Input Form</h2>
+  <form action="/submit" method="get">
+    <label for="name">Name (text):</label>
+    <input type="text" id="name" name="name" required>
+
+    <label>Age (radio buttons with options <18, 19-35, 36-48, >49):</label>
+    <div class="radio-group">
+      <input type="radio" id="age_under18" name="age" value="<18" required>
+      <label for="age_under18">&lt;18</label>
+      <input type="radio" id="age_19_35" name="age" value="19-35">
+      <label for="age_19_35">19-35</label>
+      <input type="radio" id="age_36_48" name="age" value="36-48">
+      <label for="age_36_48">36-48</label>
+      <input type="radio" id="age_over49" name="age" value=">49">
+      <label for="age_over49">&gt;49</label>
+    </div>
+
+    <label for="profession">Profession (text):</label>
+    <input type="text" id="profession" name="profession" required>
+
+    <label for="country">Country (dropdown):</label>
+    <select id="country" name="country" required>
+      <option value="">Select a country</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="france">France</option>
+    </select>
+
+    <label for="interests">Interests (list where user can select several - make up some choices):</label>
+    <textarea id="interests" name="interests" rows="4" required></textarea>
+
+    <label for="how_did">How did the user found out about the site (larger text field):</label>
+    <textarea id="how_did" name="how_did" rows="6" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+  <p><strong>Note:</strong> Try submitting the form with both GET and POST methods to verify what happens in the URL bar.</p>
+</body>
+</html>
